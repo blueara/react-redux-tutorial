@@ -29,15 +29,4 @@ const TodosContainer = () => {
   );
 };
 
-export default connect(
-  ({ todos }) => ({
-    input: todos.input,
-    todos: todos.todos,
-  }),
-  {
-    changeInput,
-    insert,
-    toggle,
-    remove,
-  },
-)(TodosContainer);
+export default TodosContainer;
